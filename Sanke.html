@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Snakes and Ladders (1-20)</title>
+    <style>
+
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:#f2f2f2;
+            font-family:Arial, sans-serif;
+        }
+
+        .board{
+            position:relative;
+            display:grid;
+            grid-template-columns: repeat(5, 60px);
+            grid-template-rows: repeat(4, 60px);
+            border:4px solid #333;
+        }
+
+        .cell{
+            border:1px solid #999;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-weight:bold;
+            font-size:18px;
+        }
+
+        .cell:nth-child(odd){
+            background:#ffe0b2;
+        }
+
+        .cell:nth-child(even){
+            background:#80deea;
+        }
+
+        /*  Snake Image */
+        .snake-img{
+            position:absolute;
+            width:80px;      /* size */
+            top:70px;        /* move up/down */
+            left:90px;       /* move left/right */
+            transform:rotate(-25deg);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="board">
+
+    <!-- Row 4 -->
+    <div class="cell">20</div>
+    <div class="cell">19</div>
+    <div class="cell">18</div>
+    <div class="cell">17</div>
+    <div class="cell">16</div>
+
+    <!-- Row 3 -->
+    <div class="cell">11</div>
+    <div class="cell">12</div>
+    <div class="cell">13</div>
+    <div class="cell">14</div>
+    <div class="cell">15</div>
+
+    <!-- Row 2 -->
+    <div class="cell">10</div>
+    <div class="cell">9</div>
+    <div class="cell">8</div>
+    <div class="cell">7</div>
+    <div class="cell">6</div>
+
+    <!-- Row 1 -->
+    <div class="cell">1</div>
+    <div class="cell">2</div>
+    <div class="cell">3</div>
+    <div class="cell">4</div>
+    <div class="cell">5</div>
+
+    <!-- Snake Image -->
+    <img src="https://pngtree.com/freepng/hand-drawn-cute-snake-clipart_5534521.html" class="snake-img">
+
+</div>
+
+</body>
+</html>
